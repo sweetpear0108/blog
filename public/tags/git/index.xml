@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Git on Sweetpear&#39;s Blog</title>
+    <link>http://localhost:1313/tags/git/</link>
+    <description>Recent content in Git on Sweetpear&#39;s Blog</description>
+    <image>
+      <title>Sweetpear&#39;s Blog</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 08 Dec 2023 15:46:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git 基础概念以及合并操作</title>
+      <link>http://localhost:1313/posts/git/git/</link>
+      <pubDate>Fri, 08 Dec 2023 15:46:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/git/git/</guid>
+      <description>文章详述了Git的基础概念如工作区、版本库、HEAD与分支，详解了合并操作包括merge和rebase方法及优劣，还讲到了rebase的&amp;ndash;onto操作和cherry-pick方法。详尽介绍了如何操作Git进行版本控制，使工作更高效.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>切片 on Sweetpear&#39;s Blog</title>
+    <link>http://localhost:1313/tags/%E5%88%87%E7%89%87/</link>
+    <description>Recent content in 切片 on Sweetpear&#39;s Blog</description>
+    <image>
+      <title>Sweetpear&#39;s Blog</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Oct 2023 20:58:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%88%87%E7%89%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go 参数传递机制</title>
+      <link>http://localhost:1313/posts/golang/function_paramter_passing/</link>
+      <pubDate>Fri, 27 Oct 2023 20:58:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/golang/function_paramter_passing/</guid>
+      <description>这篇文章讨论了Go语言中的参数传递机制，特别是在处理切片和映射时的行为。文章提到参数传递规则、切片结构和共享、修改和添加元素的影响，以及映射的实质。</description>
+    </item>
+  </channel>
+</rss>
