@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Postgres on Sweetpear&#39;s Blog</title>
+    <link>http://localhost:1313/tags/postgres/</link>
+    <description>Recent content in Postgres on Sweetpear&#39;s Blog</description>
+    <image>
+      <title>Sweetpear&#39;s Blog</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 16 Mar 2024 17:26:22 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/postgres/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Postgres 批量删除语句超时</title>
+      <link>http://localhost:1313/posts/postgres/pg_timeout/</link>
+      <pubDate>Sat, 16 Mar 2024 17:26:22 +0800</pubDate>
+      <guid>http://localhost:1313/posts/postgres/pg_timeout/</guid>
+      <description>Postgres 批量删除语句超时 场景 播放记录表history中大约有将近10亿条数据，为了减少内存占用，后台任务以每秒一次的速度删除超过1年未更新的旧记录。
+表结构（示意结构） Table &amp;#34;public.history&amp;#34; Column | Type | Collation | Nullable | Default --------+--------+-----------+----------+--------- uid | text | | not null | vid | text | | not null | ts | bigint | | not null | Indexes: &amp;#34;history_pkey&amp;#34; PRIMARY KEY, btree (uid, vid) &amp;#34;history_ts&amp;#34; btree (ts) 删除语句 delete from history where (uid, vid) in (select uid, vid from history where ts &amp;lt;= $1 limit 500) 问题出现 任务稳定运行了一年多的时间，突然有一天线上日志出现了大量的超时报错，排查后发现是pg执行删除语句的时候超过了最大时限 pq: canceling statement due to user request</description>
+    </item>
+  </channel>
+</rss>

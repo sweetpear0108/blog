@@ -32,7 +32,7 @@ select 两个特别之处：
 ### 非阻塞收发
 当 select 中存在 `default` 分支时，只需要知道其他分支中的 channel 收发状态是否就绪，如果全部未就绪就会执行 `default` 分支上的操作。
 
-因此，在其他分支上对于 channel 的读写操作都是**非阻塞**的，具体实现见[channel](https://github.com/sweetpear0108/learning-note/tree/main/golang/channel.md)这一部分。
+因此，在其他分支上对于 channel 的读写操作都是**非阻塞**的，具体实现见[channel](https://sweetpear0108.github.io/blog/posts/golang/channel/)这一部分。
 
 ### 随机执行
 在 `runtime.selectgo` 开头，通过 `runtime.fastrandn` 函数随机打乱case的轮询顺序 `pollOrder`。

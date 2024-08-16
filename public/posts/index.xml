@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 08 Mar 2024 18:32:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Mar 2024 17:26:22 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Postgres 批量删除语句超时</title>
+      <link>http://localhost:1313/posts/postgres/pg_timeout/</link>
+      <pubDate>Sat, 16 Mar 2024 17:26:22 +0800</pubDate>
+      <guid>http://localhost:1313/posts/postgres/pg_timeout/</guid>
+      <description>Postgres 批量删除语句超时 场景 播放记录表history中大约有将近10亿条数据，为了减少内存占用，后台任务以每秒一次的速度删除超过1年未更新的旧记录。
+表结构（示意结构） Table &amp;#34;public.history&amp;#34; Column | Type | Collation | Nullable | Default --------+--------+-----------+----------+--------- uid | text | | not null | vid | text | | not null | ts | bigint | | not null | Indexes: &amp;#34;history_pkey&amp;#34; PRIMARY KEY, btree (uid, vid) &amp;#34;history_ts&amp;#34; btree (ts) 删除语句 delete from history where (uid, vid) in (select uid, vid from history where ts &amp;lt;= $1 limit 500) 问题出现 任务稳定运行了一年多的时间，突然有一天线上日志出现了大量的超时报错，排查后发现是pg执行删除语句的时候超过了最大时限 pq: canceling statement due to user request</description>
+    </item>
     <item>
       <title>redis 哨兵机制</title>
       <link>http://localhost:1313/posts/redis/sentinel/</link>
@@ -131,6 +139,13 @@
       <pubDate>Mon, 23 Oct 2023 19:17:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/golang/map/</guid>
       <description>介绍了map的底层结构以及扩容过程</description>
+    </item>
+    <item>
+      <title>python入门</title>
+      <link>http://localhost:1313/posts/python/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/python/python/</guid>
+      <description>python基础语法</description>
     </item>
   </channel>
 </rss>

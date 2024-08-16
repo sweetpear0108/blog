@@ -54,7 +54,7 @@ alloc和len字段
 flags字段
 1. flags类型是针对不同大小的字符串选择了不同比特位的int型变量，节约了内存空间。
 
-PS：以上也是 golang 中*切片*的设计思想（go中string底层没有cap字段，拼接是开辟新内存然后依次copy过去）
+PS：以上也是 golang 中string的设计思想（go中string拼接是开辟新内存然后依次copy过去）
 
 编译指令
 在分配内存时采用**紧凑(packed)**的方式，避免内存对齐，同样为了节约内存。
@@ -75,6 +75,7 @@ entry结构：`<prevlen> <encoding> <entry-data>`
 
 #### 遍历
 从左向右：计算prevlen占用内存，进而得到encoding起始地址，根据encoding编码可得数据大小，从而找到下一个entry起始地址。
+
 从右向左：通过prevlen和尾节点地址可以依次推导出上一个节点的地址
 
 #### 优势
@@ -89,13 +90,16 @@ entry结构：`<prevlen> <encoding> <entry-data>`
 listpack是redis5.0中针对ziplist**连锁更新**的问题进行改良而来的数据结构，因此同样也属于紧凑布局。
 
 基本结构和ziplist相似
+
 整体结构：`<lpbytes> <lplen> <entry> <entry> ... <entry> <lpend>`
+
 entry结构：`<encoding> <entry-data> <entry-len>`
 
 * 不同：整体结构中移除了尾节点偏移量，entry结构中改为保存**当前**entry中 `encoding+data` 的总长度，并且为了从右向左遍历使用了**大端存储模式**并将entry-len放到entry末尾。
 
 #### 遍历
 从左向右：解析encoding可以得到元素类型和长度，并且可以进一步计算得到len本身的长度，从而找到下一个entry起始地址。
+
 从右向左：通过lpbytes总长度直接定位到尾部结束标记，然后从右到左逐个字节读取entry-len（当读到的字节最高位为0表示该结束了）,获得entry前两部分大小，从而可以定位到前一项entry的末尾，如此往复。
 
 ### quicklist 快表

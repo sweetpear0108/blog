@@ -67,21 +67,21 @@ synchronization object, so there may be many sudogs for one object.
 
 * channel是在**堆**上分配的，目的是为了goroutine之间的通信（因为每个G都有自己的栈）
 
-## 发送
+## 向channel发送
 三种特判：
 1. 如果 `hchan` 是 `nil`，那么会调用 `gopark` 挂起当前goroutine，直接返回。 
 2. 非阻塞发送（select中）如果无缓冲区或者满了，那么直接返回。 
 3. 如果channel已经关闭，panic。
 
 三种情况：
-1. 接收队列不为空
+1. 接收阻塞队列不为空
 2. 缓冲区有空闲
 3. 缓冲区无空闲
 
 * 特判3和三种情况是要加锁的（`hchan.lock`）。
 
-### 接收队列不为空
-* 两种情况：无缓冲区channel、缓冲区为空的channel
+### 接收阻塞队列不为空
+* channel可能的两种状态：无缓冲区channel、缓冲区为空的channel
 
 取队头元素，获取sudog中保存的待接收数据地址，直接将发送的数据copy到待接收地址上，并且将sudog中保存的暂止状态的 goroutine 标记为 `Grunnable` 状态，放到P的 `runnext`位置上等待执行。解锁直接返回。
 
@@ -104,14 +104,14 @@ synchronization object, so there may be many sudogs for one object.
 
 组装包含当前g以及相关信息的 sudog，将其入队，并调用 `gopark` 暂止当前的g，等待被唤醒。
 
-## 接收
+## 从channel接收
 三个特判
 1. 如果 `hchan` 是 `nil`，对于非阻塞接收直接返回；而对于阻塞接收会调用 `gopark` 挂起当前goroutine，直接返回。 
 2. 非阻塞接收（select中）如果无缓冲区或者缓冲区为空，清除待接收指针对应的数据（将等号左边等待赋值的变量置为零值），直接返回。 
 3. 如果channel已经关闭，并且缓冲区中没有数据，清除待接收指针对应的数据，直接返回。 
 
 三种情况
-1. 发送队列不为空
+1. 发送阻塞队列不为空
 2. 缓冲区有数据
 3. 缓冲区无数据
 
@@ -136,7 +136,7 @@ synchronization object, so there may be many sudogs for one object.
 将接收和发送队列中所有等待中的goroutine取出来唤醒。其中发送队列的所有goroutine都会panic。
 
 ## nil channel 有什么用？
-可以用来动态地控制哪些 case 可以在 select 中被执行。通过将 channel 设置为 nil 临时禁用通道交互。具体见[select关键字](https://github.com/sweetpear0108/learning-note/tree/main/golang/select.md)
+可以用来动态地控制哪些 case 可以在 select 中被执行。通过将 channel 设置为 nil 临时禁用通道交互。具体见[select关键字](https://sweetpear0108.github.io/blog/posts/golang/select/)
 
 ## channel 引发的资源泄露
 对于一个channel，如果没有任何的goroutine引用，那么会进行GC将其回收。
