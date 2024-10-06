@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-10-06T18:51:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-10-06T18:51:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-10-06T18:51:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E9%9B%85%E6%80%9D/</loc>
+    <lastmod>2024-10-06T18:51:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E9%9B%85%E6%80%9D%E5%86%99%E4%BD%9C/</loc>
+    <lastmod>2024-10-06T18:51:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/iltes/%E9%9B%85%E6%80%9D%E5%86%99%E4%BD%9C/</loc>
+    <lastmod>2024-10-06T18:51:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/iltes/%E9%9B%85%E6%80%9D%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2024-10-06T18:50:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2024-08-08T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/python/python/</loc>
+    <lastmod>2024-08-08T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/postgres/</loc>
     <lastmod>2024-03-16T17:26:22+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/postgres/pg_timeout/</loc>
-    <lastmod>2024-03-16T17:26:22+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-03-16T17:26:22+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-03-16T17:26:22+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-03-16T17:26:22+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E7%B4%A2%E5%BC%95/</loc>
@@ -134,10 +152,6 @@
     <loc>http://localhost:1313/archives/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/python/python/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url>

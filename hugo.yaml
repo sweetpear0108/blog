@@ -84,19 +84,9 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "来了您内 \U0001F44B"
+    Title: "Hi There \U0001F44B"
     Content: >
-      - 甜味梨🍐的学习笔记
-
-      -
-
-      - 个人技能：
-
-      1. 精通Golang的拼写
-
-      2. 熟练掌握Redis的安装
-      
-      3. 深度参与开源项目的点亮🌟
+      甜味梨🍐的学习笔记
 
   socialIcons:
     - name: github
