@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>雅思 on Sweetpear&#39;s Blog</title>
-    <link>http://localhost:1313/tags/%E9%9B%85%E6%80%9D/</link>
+    <link>http://localhost:40225/tags/%E9%9B%85%E6%80%9D/</link>
     <description>Recent content in 雅思 on Sweetpear&#39;s Blog</description>
     <image>
       <title>Sweetpear&#39;s Blog</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:40225/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:40225/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Sun, 06 Oct 2024 18:51:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E9%9B%85%E6%80%9D/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:40225/tags/%E9%9B%85%E6%80%9D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>雅思写作练习记录</title>
-      <link>http://localhost:1313/posts/iltes/%E9%9B%85%E6%80%9D%E5%86%99%E4%BD%9C/</link>
+      <link>http://localhost:40225/posts/iltes/%E9%9B%85%E6%80%9D%E5%86%99%E4%BD%9C/</link>
       <pubDate>Sun, 06 Oct 2024 18:51:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/iltes/%E9%9B%85%E6%80%9D%E5%86%99%E4%BD%9C/</guid>
+      <guid>http://localhost:40225/posts/iltes/%E9%9B%85%E6%80%9D%E5%86%99%E4%BD%9C/</guid>
       <description>初稿、ai评分、ai润色</description>
     </item>
     <item>
       <title>雅思听说读写技巧</title>
-      <link>http://localhost:1313/posts/iltes/%E9%9B%85%E6%80%9D%E6%8A%80%E5%B7%A7/</link>
+      <link>http://localhost:40225/posts/iltes/%E9%9B%85%E6%80%9D%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Sun, 06 Oct 2024 18:50:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/iltes/%E9%9B%85%E6%80%9D%E6%8A%80%E5%B7%A7/</guid>
+      <guid>http://localhost:40225/posts/iltes/%E9%9B%85%E6%80%9D%E6%8A%80%E5%B7%A7/</guid>
       <description>网课笔记总结</description>
     </item>
   </channel>

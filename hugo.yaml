@@ -44,19 +44,19 @@ params:
   showtoc: false
   tocopen: false
 
- # assets:
+  assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    # favicon: "<link / abs url>"
-    # favicon16x16: "<link / abs url>"
-    # favicon32x32: "<link / abs url>"
-    # apple_touch_icon: "<link / abs url>"
-    # safari_pinned_tab: "<link / abs url>"
+    favicon: "/icon.png"
+    favicon16x16: "/icon.png"
+    favicon32x32: "/icon.png"
+    apple_touch_icon: "/icon.png"
+    safari_pinned_tab: "/icon.png"
 
-  # label:
-  #   text: "Sweetpear's Blog"
-  #   icon: /apple-touch-icon.png
-  #   iconHeight: 35
+  label:
+    text: "Sweetpear's Blog"
+    icon: /icon.png
+    iconHeight: 35
 
   # profile-mode
   # profileMode:
@@ -84,9 +84,20 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi There \U0001F44B"
-    Content: >
-      甜味梨🍐的学习笔记
+    Title: "Welcome to sweetpear's blog \U0001F44B"
+    Content: |
+      甜味梨的学习笔记
+
+      ```
+      ____________________   _____ __________ 
+      \______  \_   _____/  /  _  \\______   \
+      |     ___/|   __ )_  /  /_\  \|       _/
+      |    |    |        \/    |    \    |   \
+      |____|   /_______  /\____|__  /____|_  /
+                       \/         \/       \/                         
+      ```
+                            
+      *Always keep an apprentice's heart*
 
   socialIcons:
     - name: github

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git合并 on Sweetpear&#39;s Blog</title>
-    <link>http://localhost:1313/tags/git%E5%90%88%E5%B9%B6/</link>
+    <link>http://localhost:40225/tags/git%E5%90%88%E5%B9%B6/</link>
     <description>Recent content in Git合并 on Sweetpear&#39;s Blog</description>
     <image>
       <title>Sweetpear&#39;s Blog</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:40225/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:40225/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 08 Dec 2023 15:46:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/git%E5%90%88%E5%B9%B6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:40225/tags/git%E5%90%88%E5%B9%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git 基础概念以及合并操作</title>
-      <link>http://localhost:1313/posts/git/git/</link>
+      <link>http://localhost:40225/posts/git/git/</link>
       <pubDate>Fri, 08 Dec 2023 15:46:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/git/git/</guid>
+      <guid>http://localhost:40225/posts/git/git/</guid>
       <description>文章详述了Git的基础概念如工作区、版本库、HEAD与分支，详解了合并操作包括merge和rebase方法及优劣，还讲到了rebase的&amp;ndash;onto操作和cherry-pick方法。详尽介绍了如何操作Git进行版本控制，使工作更高效.</description>
     </item>
   </channel>

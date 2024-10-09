@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Redis on Sweetpear&#39;s Blog</title>
-    <link>http://localhost:1313/tags/redis/</link>
+    <link>http://localhost:40225/tags/redis/</link>
     <description>Recent content in Redis on Sweetpear&#39;s Blog</description>
     <image>
       <title>Sweetpear&#39;s Blog</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:40225/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:40225/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 08 Mar 2024 18:32:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:40225/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>redis 哨兵机制</title>
-      <link>http://localhost:1313/posts/redis/sentinel/</link>
+      <link>http://localhost:40225/posts/redis/sentinel/</link>
       <pubDate>Fri, 08 Mar 2024 18:32:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/redis/sentinel/</guid>
+      <guid>http://localhost:40225/posts/redis/sentinel/</guid>
       <description>Redis的哨兵机制解决了主库故障的问题，通过监控、选主和通知实现高可用性和故障转移，提供可靠的服务。</description>
     </item>
     <item>
       <title>redis 主从复制机制</title>
-      <link>http://localhost:1313/posts/redis/replication/</link>
+      <link>http://localhost:40225/posts/redis/replication/</link>
       <pubDate>Fri, 01 Mar 2024 18:01:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/redis/replication/</guid>
+      <guid>http://localhost:40225/posts/redis/replication/</guid>
       <description>Redis主从复制将数据备份到多个从服务器，提高可用性。主从同步包括全量复制、基于长连接的命令传播、增量复制阶段。</description>
     </item>
     <item>
       <title>redis 持久化之RDB</title>
-      <link>http://localhost:1313/posts/redis/rdb/</link>
+      <link>http://localhost:40225/posts/redis/rdb/</link>
       <pubDate>Sun, 11 Feb 2024 23:59:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/redis/rdb/</guid>
+      <guid>http://localhost:40225/posts/redis/rdb/</guid>
       <description>RDB记录了某一时刻的数据，恢复效率高。全量快照可以同步或异步执行，异步执行使用写时复制技术，避免了主进程阻塞。增量快照记录了增量修改的元数据信息。混合快照通过同时使用RDB和AOF格式，既提供快速恢复又减少数据丢失。</description>
     </item>
     <item>
       <title>redis 持久化之AOF</title>
-      <link>http://localhost:1313/posts/redis/aof/</link>
+      <link>http://localhost:40225/posts/redis/aof/</link>
       <pubDate>Wed, 07 Feb 2024 19:50:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/redis/aof/</guid>
+      <guid>http://localhost:40225/posts/redis/aof/</guid>
       <description>AOF是Redis的一种持久化方式，将写命令记录到文件中，用于数据恢复。它以文本形式保存，可读性强，但空间占用较大。AOF有三种写回策略，影响数据丢失和主进程阻塞。Redis通过重写机制优化AOF文件，提高性能。 AOF恢复速度较慢，但可靠。</description>
     </item>
     <item>
       <title>redis 数据结构</title>
-      <link>http://localhost:1313/posts/redis/data_structure/</link>
+      <link>http://localhost:40225/posts/redis/data_structure/</link>
       <pubDate>Fri, 02 Feb 2024 23:35:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/redis/data_structure/</guid>
+      <guid>http://localhost:40225/posts/redis/data_structure/</guid>
       <description>详细分析了redis底层数据结构，由下到上认识了基本数据类型以及优点缺点。</description>
     </item>
     <item>
       <title>redis 全景图</title>
-      <link>http://localhost:1313/posts/redis/overall/</link>
+      <link>http://localhost:40225/posts/redis/overall/</link>
       <pubDate>Thu, 01 Feb 2024 17:33:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/redis/overall/</guid>
+      <guid>http://localhost:40225/posts/redis/overall/</guid>
       <description>从宏观俯瞰redis</description>
     </item>
   </channel>
