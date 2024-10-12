@@ -62,17 +62,20 @@ build, construct
 # task 2
 ```
 development, advancement, progress, improvement
-substantial, considerable, significant, numerous, large, countless
+substantial, considerable, significant, remarkable, critical, notable, numerous, large, countless
 economy, finance, fortunes, wealth, money, resources, capital, income, profits
 help sb to, enable sb to, support sb with, encourage sb to, assist sb with
 assess the consequences, estimate the impact, consider the implications
 facilitate, ease, make easier, simplify, reduce the complexity
 regardless, no matter what, whatever
 way, method, approach
+cause, lead to
+engage in, do xxx things
+contribute to
 ```
 
 ## 观点库
-### Effectiveness and Efficiency
+* Effectiveness and Efficiency
 1. Boosts productivity.
 2. Reduces waste.
 3. Enhances performance.
