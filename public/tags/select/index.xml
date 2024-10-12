@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Select on Sweetpear&#39;s Blog</title>
-    <link>http://localhost:40225/tags/select/</link>
+    <link>http://localhost:40585/tags/select/</link>
     <description>Recent content in Select on Sweetpear&#39;s Blog</description>
     <image>
       <title>Sweetpear&#39;s Blog</title>
-      <url>http://localhost:40225/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:40225/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:40585/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:40585/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Wed, 17 Jan 2024 16:40:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:40225/tags/select/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:40585/tags/select/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go select关键字</title>
-      <link>http://localhost:40225/posts/golang/select/</link>
+      <link>http://localhost:40585/posts/golang/select/</link>
       <pubDate>Wed, 17 Jan 2024 16:40:00 +0800</pubDate>
-      <guid>http://localhost:40225/posts/golang/select/</guid>
+      <guid>http://localhost:40585/posts/golang/select/</guid>
       <description>select关键字用于多路通信和同步，可以同时监听多个channel的状态，并等待其中一个channel就绪。它具有非阻塞收发和随机执行的特点，通过编译和运行时的优化与机制来实现多路通信。select是Go中处理并发通信和同步的强大工具。</description>
     </item>
   </channel>
